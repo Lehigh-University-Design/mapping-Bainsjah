@@ -3,71 +3,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Name/Title": "Terrace Heights LF",
-        "Description (waste in tons)": "<p>6966909</p>",
-        "Image": ""
-      },
-      "geometry": {
-        "coordinates": [
-          -120.4052,
-          46.60617
-        ],
-        "type": "Point"
-      },
-      "id": "05a8fee122c7b7a1e3d844d42ad6609c"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name/Title": "Ephrata LF",
-        "Description (waste in tons)": "<p>2787559</p>"
-      },
-      "geometry": {
-        "coordinates": [
-          -119.574,
-          47.27
-        ],
-        "type": "Point"
-      },
-      "id": "10f98769abe41b0b60c8aeeeca994d40"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name/Title": "Land Recovery Landfill",
-        "Description (waste in tons)": "<p>21588591</p>",
-        "Image": ""
-      },
-      "geometry": {
-        "coordinates": [
-          -122.2905,
-          46.971
-        ],
-        "type": "Point"
-      },
-      "id": "4918f6c787e2b4299cf5d9b1e6eacffc"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Name/Title": "Cowlitz County Headquarters Landfill",
-        "Description (waste in tons)": "<p>10398414</p",
-        "Image": ""
-      },
-      "geometry": {
-        "coordinates": [
-          -122.7781,
-          46.24873
-        ],
-        "type": "Point"
-      },
-      "id": "664cd1a725c89bbb24271fb0b35ff24b"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "Name/Title": "Roosevelt Regional MSW Landfill",
-        "Description (waste in tons)": "<p>62944152</p>",
+        "Description ": "<p>Owned by ... Public vs private /p>",
+        "Waste (tons)": "62944152",
+        "Year Opened": "1234",
         "Image": ""
       },
       "geometry": {
@@ -77,13 +16,33 @@
         ],
         "type": "Point"
       },
-      "id": "a9ac5c1f545b9985bcada76c3a0f32f4"
+      "id": "46a4e59ae1a76d19e4774137b909a5b3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name/Title": "Cowlitz County Headquarters Landfill",
+        "Description ": "<p>Owned by ... Public vs private /p>",
+        "Waste (tons)": "10398414",
+        "Year Opened": "1234",
+        "Image": "images/CowlitzLF.jpg"
+      },
+      "geometry": {
+        "coordinates": [
+          -122.7781,
+          46.24873
+        ],
+        "type": "Point"
+      },
+      "id": "56dad7a9f22323acaa05e54828c852f8"
     },
     {
       "type": "Feature",
       "properties": {
         "Name/Title": "Greater Wenatchee LF",
-        "Description (waste in tons)": "<p>6644627</p>",
+        "Description ": "<p>Owned by ... Public vs private /p>",
+        "Waste (tons)": "6644627",
+        "Year Opened": "1234",
         "Image": ""
       },
       "geometry": {
@@ -93,13 +52,15 @@
         ],
         "type": "Point"
       },
-      "id": "c61ab1613f8749a77ee9180c400b8e35"
+      "id": "61421c0d6076f99755170973218e6433"
     },
     {
       "type": "Feature",
       "properties": {
         "Name/Title": "Hidden Valley LF",
-        "Description (waste in tons)": "<p>17425280</p>",
+        "Description ": "<p>Owned by ... Public vs private /p>",
+        "Waste (tons)": "17425280",
+        "Year Opened": "1234",
         "Image": ""
       },
       "geometry": {
@@ -109,14 +70,33 @@
         ],
         "type": "Point"
       },
-      "id": "f2509609138ff8d0d70a578ea97647ec"
+      "id": "7b75ee9167e00e0421a797f97c1ca4f4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name/Title": "Ephrata LF",
+        "Description ": "<p>Owned by ... Public vs private /p>",
+        "Waste (tons)": "2787559",
+        "Year Opened": "1234"
+      },
+      "geometry": {
+        "coordinates": [
+          -119.574,
+          47.27
+        ],
+        "type": "Point"
+      },
+      "id": "873a658354b4ec5418900e6c4ff12d86"
     },
     {
       "type": "Feature",
       "properties": {
         "Name/Title": "King County Solid Waste Division, WA",
-        "Description (waste in tons)": "<p>43806272</p>",
-        "Image": "images/Cedar_hills_LF_1.jpg"
+        "Description ": "<p>Owned by ... Public vs private /p>",
+        "Waste (tons)": "43806272",
+        "Year Opened": "1234",
+        "Image": "images/Cedar hills LF 1.jpg"
       },
       "geometry": {
         "coordinates": [
@@ -125,7 +105,43 @@
         ],
         "type": "Point"
       },
-      "id": "f8340d2ea86a931aae9b7b7e3cc31705"
+      "id": "88ae2798518628523f6ede600770c9a1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name/Title": "Land Recovery Landfill",
+        "Description ": "<p>Owned by ... Public vs private /p>",
+        "Waste (tons)": "21588591",
+        "Year Opened": "1234",
+        "Image": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -122.2905,
+          46.971
+        ],
+        "type": "Point"
+      },
+      "id": "b81ba857df1bfe141daf88d8fc86784a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name/Title": "Terrace Heights LF",
+        "Description ": "<p>Owned by ... Public vs private /p>",
+        "Waste (tons)": "6966909",
+        "Year Opened": "1234",
+        "Image": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.4052,
+          46.60617
+        ],
+        "type": "Point"
+      },
+      "id": "c070c199a945288d90e5b0e5d7fd8512"
     }
   ],
   "type": "FeatureCollection"

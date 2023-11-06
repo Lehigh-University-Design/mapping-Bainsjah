@@ -27,8 +27,8 @@
 
 			<section id="intro">
 				<div class="inner">
-					<h1>Washington Landfills</h1>
-					<p>An exploration of the largest landfills in Washington State</p>
+					<h1>Landfills of Washington State</h1>
+					<p>An exploration of the largest landfills in Washington.</p>
 				</div>
 			</section>
 
@@ -61,7 +61,7 @@
 			  			mapboxgl.accessToken = 'pk.eyJ1IjoiYmFpbnNqYWgiLCJhIjoiY2xubTFzZzVyMHdtZzJscG05bXZhNXBuZCJ9.JqVlh4VsM7Rfzu6Vodna-Q';
 						const map = new mapboxgl.Map({
 							container: 'map', // container ID
-							style: 'mapbox://styles/bainsjah/clod8bvvu000401qjfq2s5lmd', // style URL
+							style: 'mapbox://styles/bainsjah/clon9vztn008u01ns9290dole', // style URL
 							center: [-122.0844, 47.479], // starting position [lng, lat]
 							zoom: 11, // starting zoom
 							bearing: 0,
@@ -69,146 +69,148 @@
 						});
 
 						map.on('load', () => {
-							map.addSource('data', {
-							type: 'geojson',
-							data: data
-							});
-							 
-							map.addLayer({
-							'id': 'pyramids-layer',
-							'type': 'circle',
-							'source': 'data',
-							//this is for the map marker
-							'paint': {
-							'circle-radius': 3,
-							'circle-stroke-width': 1,
-							'circle-color': 'black',
-							'circle-stroke-color': 'black'
-							}
-							});
-						});
+											map.addSource('data', {
+											type: 'geojson',
+											data: data
+											});
+											 
+											map.addLayer({
+											'id': 'pyramids-layer',
+											'type': 'circle',
+											'source': 'data',
+											//this is for the map marker
+											'paint': {
+											'circle-radius': 3,
+											'circle-stroke-width': 1,
+											'circle-color': 'black',
+											'circle-stroke-color': 'black'
+											}
+											});
+										});
 
-						map.scrollZoom.disable();
+										map.scrollZoom.disable();
 
-			  			for (const item in data.features) {
+							  			for (const item in data.features) {
 
-						 	//console.log(`${data}: ${data.features[item].id}`);
-			  				const p = data.features[item];
+										 	//console.log(`${data}: ${data.features[item].id}`);
+							  				const p = data.features[item];
 
-						 	let div = document.createElement('div');
-						 	div.setAttribute("class", "step");
-						 	div.setAttribute("id", p.id);
-						 	div.setAttribute("data-step", p.id);
-						 	div.setAttribute("data-long", p.geometry.coordinates[0]);
-						 	div.setAttribute("data-lat", p.geometry.coordinates[1]);
-						 	//var pid = item
+										 	let div = document.createElement('div');
+										 	div.setAttribute("class", "step");
+										 	div.setAttribute("id", p.id);
+										 	div.setAttribute("data-step", p.id);
+										 	div.setAttribute("data-long", p.geometry.coordinates[0]);
+										 	div.setAttribute("data-lat", p.geometry.coordinates[1]);
+										 	//var pid = item
 
-						 	// header
-						 	if(p.properties.Title) {
-							 	var header = document.createElement("h2");
-							 	//var node = document.createTextNode("Step "+pid);
-							 	var node = document.createTextNode(p.properties.Title);
-							 	header.appendChild(node);
-							 	div.appendChild(header);
-						 	}
+										 	// header
+										 	if(p.properties.Title) {
+											 	var header = document.createElement("h2");
+											 	//var node = document.createTextNode("Step "+pid);
+											 	var node = document.createTextNode(p.properties.Title);
+											 	header.appendChild(node);
+											 	div.appendChild(header);
+										 	}
 
-						 	// image
-						 	if(p.properties.Image) {
-						 		var img = document.createElement("img");
-						 		img.src = p.properties.Image;
-						 		div.appendChild(img);
-						 	}
+										 	// image
+										 	if(p.properties.Image) {
+										 		var img = document.createElement("img");
+										 		img.src = p.properties.Image;
+										 		div.appendChild(img);
+										 	}
 
-						 	// description
-						 	if(p.properties.Description) {
-						 		var description = document.createElement("div");
-						 		description.id = 'description_'+p.id;
-						 		description.className = "description";
-						 		description.innerHTML = p.properties.Description;
-						 		div.appendChild(description);
-						 	}
+										 	// description
+										 	if(p.properties.Description) {
+										 		var description = document.createElement("div");
+										 		description.id = 'description_'+p.id;
+										 		description.className = "description";
+										 		description.innerHTML = p.properties.Description;
+										 		div.appendChild(description);
+										 	}
 
-						 	document.getElementById("article_container").appendChild(div);
+										 	document.getElementById("article_container").appendChild(div);
 
-						}
+										}
 
-			  			//console.log(data.features);
+							  			//console.log(data.features);
 
-			  			// using d3 for convenience
-						var main = d3.select("main");
-						var scrolly = main.select("#scrolly");
-						var figure = scrolly.select("figure");
-						var article = scrolly.select("article");
-						var step = article.selectAll(".step");
+							  			// using d3 for convenience
+										var main = d3.select("main");
+										var scrolly = main.select("#scrolly");
+										var figure = scrolly.select("figure");
+										var article = scrolly.select("article");
+										var step = article.selectAll(".step");
 
-						// initialize the scrollama
-						var scroller = scrollama();
+										// initialize the scrollama
+										var scroller = scrollama();
 
-						// generic window resize listener event
-						function handleResize() {
-							// 1. update height of step elements
-							var stepH = Math.floor(window.innerHeight * 0.75);
-							step.style("height", stepH + "px");
+										// generic window resize listener event
+										function handleResize() {
+											// 1. update height of step elements
+											var stepH = Math.floor(window.innerHeight * 0.75);
+											step.style("height", stepH + "px");
 
-							var figureHeight = window.innerHeight;
-							var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+											var figureHeight = window.innerHeight;
+											var figureMarginTop = (window.innerHeight - figureHeight) / 2;
 
-							figure
-								.style("height", figureHeight + "px")
-								.style("top", figureMarginTop + "px");
+											figure
+												.style("height", figureHeight + "px")
+												.style("top", figureMarginTop + "px");
 
-							// 3. tell scrollama to update new element dimensions
-							scroller.resize();
-						}
+											// 3. tell scrollama to update new element dimensions
+											scroller.resize();
+										}
 
-						// scrollama event handlers
-						function handleStepEnter(response) {
-							console.log(response);
-							//response = { element, direction, index }
+										// scrollama event handlers
+										function handleStepEnter(response) {
+											console.log(response);
+											//response = { element, direction, index }
 
-							//console.log(response.element.dataset.long)
+											//console.log(response.element.dataset.long)
 
-							map.flyTo({
-								center: [response.element.dataset.long, response.element.dataset.lat],
-								essential: true // this animation is considered essential with respect to prefers-reduced-motion
-							});
+											map.flyTo({
+												center: [response.element.dataset.long, response.element.dataset.lat],
+												essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+												zoom:16
+												offset: [50, 0],
+											});
 
-							// add color to current step only
-							step.classed("is-active", function (d, i) {
-								return i === response.index;
-							});
+											// add color to current step only
+											step.classed("is-active", function (d, i) {
+												return i === response.index;
+											});
 
-							// update graphic based on step
-							figure.select("p.ind").text(response.index);
-						}
-
-
-						function init() {
+											// update graphic based on step
+											//figure.select("p.ind").text(response.index);
+										}
 
 
-							// 1. force a resize on load to ensure proper dimensions are sent to scrollama
-							handleResize();
+										function init() {
 
-							// 2. setup the scroller passing options
-							// 		this will also initialize trigger observations
-							// 3. bind scrollama event handlers (this can be chained like below)
-							scroller
-								.setup({
-									step: "#scrolly article .step",
-									offset: 0.33,
-									debug: false
-								})
-								.onStepEnter(handleStepEnter);
-						}
 
-						// kick things off
-						init();
+											// 1. force a resize on load to ensure proper dimensions are sent to scrollama
+											handleResize();
 
-						}
+											// 2. setup the scroller passing options
+											// 		this will also initialize trigger observations
+											// 3. bind scrollama event handlers (this can be chained like below)
+											scroller
+												.setup({
+													step: "#scrolly article .step",
+													offset: 0.33,
+													debug: false
+												})
+												.onStepEnter(handleStepEnter);
+										}
 
-						loadData();
+										// kick things off
+										init();
 
-		</script>
+										}
+
+										loadData();
+
+			</script>
 	
 	</body>
 
