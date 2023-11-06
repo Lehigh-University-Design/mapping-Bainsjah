@@ -63,7 +63,7 @@
 							container: 'map', // container ID
 							style: 'mapbox://styles/bainsjah/clon9vztn008u01ns9290dole', // style URL
 							center: [-122.0844, 47.479], // starting position [lng, lat]
-							zoom: 11, // starting zoom
+							zoom: 6, // starting zoom
 							bearing: 0,
 							pitch: 45
 						});
@@ -80,10 +80,10 @@
 											'source': 'data',
 											//this is for the map marker
 											'paint': {
-											'circle-radius': 3,
+											'circle-radius': 1,
 											'circle-stroke-width': 1,
-											'circle-color': 'black',
-											'circle-stroke-color': 'black'
+											'circle-color': 'red',
+											'circle-stroke-color': 'red'
 											}
 											});
 										});
@@ -171,8 +171,8 @@
 											map.flyTo({
 												center: [response.element.dataset.long, response.element.dataset.lat],
 												essential: true, // this animation is considered essential with respect to prefers-reduced-motion
-												zoom:16
-												offset: [50, 0],
+												zoom:13,
+												offset: [60, 0]
 											});
 
 											// add color to current step only
