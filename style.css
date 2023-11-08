@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gill Sans Extrabold', sans-serif;
   color: #000000;
   font-size: 16px;
   min-height: 1280px;
@@ -47,8 +47,8 @@ a:hover {
 }
 
 #intro h1 {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
+  font-family: 'Gill Sans Extrabold', sans-serif;
+  font-weight: 800;
   font-size: 4em;
   margin-top: 0;
   margin-bottom: 0.25em;
@@ -72,7 +72,7 @@ a:hover {
 
 
 #outro {
-  height: 540px;
+  height: 0px;
 }
 
 #scrolly {
