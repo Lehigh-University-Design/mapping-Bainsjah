@@ -39,11 +39,12 @@ a:hover {
 
 #intro {
   width: 100vw;
-  height: 100vh;
+  height: 93vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #0b0;
 }
 
 #intro h1 {
