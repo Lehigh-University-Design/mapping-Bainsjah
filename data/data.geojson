@@ -1,10 +1,11 @@
 {
   "features": [
+   
     {
       "type": "Feature",
       "properties": {
         "Title": "Land Recovery Landfill",
-        "Description": "<p>Privately owned by Waste Connections Inc. with 21,588,591 tons of waste in place.</p>",
+        "Description": "<p>Privately owned by Waste Connections Inc. with <strong>21,588,591</strong> tons of waste in place. Opened in 1999 and will close in 2032.</p>",
         "Waste": "21588591",
         "Operation Life Cycle": "1999-2032",
         "Image": "images/landrecovery.jpg"
@@ -18,11 +19,12 @@
       },
       "id": "09dfce4d1f8ae3fba579c37710dc8204"
     },
+    
     {
       "type": "Feature",
       "properties": {
         "Title": "Cedar Hills Regional Landfill",
-        "Description": "<p>Publicly owned with 43,806,272 tons of waste in place.</p>",
+        "Description": "<p>Publicly owned with <strong>43,806,272</strong> tons of waste in place. Opened in 1965 and will close in 2046.</p>",
         "Waste": "43806272",
         "Operation Life Cycle": "1965-2046",
         "Image": "images/CedarhillsLF.jpg"
@@ -36,11 +38,12 @@
       },
       "id": "312283101204a13d62aeea26c7c35f2b"
     },
+   
     {
       "type": "Feature",
       "properties": {
         "Title": "Roosevelt Regional MSW Landfill",
-        "Description": "<p>Privately ownded by Republic Services Inc. with 120,944,152 tons of waste in place. It handles about 70% of household waste in Washington State and is the 4th largest lanfill in the United States.</p>",
+        "Description": "<p>Privately owned by Republic Services Inc. with <strong>120,944,152</strong> tons of waste in place. It handles about 70% of household waste in Washington State and is the 4th largest lanfill in the United States. Opened in 1990 and will close in 2085. </p>",
         "Waste": "120944152",
         "Operation Life Cycle": "1990-2085",
         "Image": "images/infographic.jpg"
@@ -54,11 +57,12 @@
       },
       "id": "4978b9cfb09dc29b8a0664f5db011e86"
     },
+    
     {
       "type": "Feature",
       "properties": {
         "Title": "Terrace Heights Landfill",
-        "Description": "<p>Publicly owned with 6,966,909 tons of waste in place.</p>",
+        "Description": "<p>Publicly owned with <strong>6,966,909</strong> tons of waste in place. Opened in 1974 and will close in 2030.</p>",
         "Waste": "6966909",
         "Operation Life Cycle": "1974-2030",
         "Image": "images/terraceheights.jpg"
@@ -72,11 +76,12 @@
       },
       "id": "639b2f8b0ff2dfd107f744f381c3de59"
     },
+   
     {
       "type": "Feature",
       "properties": {
         "Title": "Hidden Valley Landfill",
-        "Description": "<p>Privately owned by Waste Connectins Inc. with 17,325,280 tons of waste in place. Not currently operational.</p>",
+        "Description": "<p>Privately owned by Waste Connectins Inc. with <strong>17,325,280</strong> tons of waste in place. Opened in 1965 and closed in 1998.</p>",
         "Waste": "17425280",
         "Operation Life Cycle": "1965-1998",
         "Image": "images/hiddenvalley.jpg"
@@ -90,11 +95,12 @@
       },
       "id": "95ebc7c3b4931dc829e97ce8ededcf1c"
     },
+   
     {
       "type": "Feature",
       "properties": {
         "Title": "Cowlitz County Headquarters Landfill",
-        "Description": "<p>Publicly owned with 10,398,414 tons of waste in place.</p>",
+        "Description": "<p>Publicly owned with <strong>10,398,414</strong> tons of waste in place. Opened in 1993 and will close in 2120.</p>",
         "Waste": "10398414",
         "Operation Life Cycle": "1993-2120",
         "Image": "images/CowlitzLF.jpg"
@@ -108,11 +114,12 @@
       },
       "id": "a30cc5b530ca8ad215e91663cebf8b4f"
     },
+   
     {
       "type": "Feature",
       "properties": {
         "Title": "Ephrata Landfill",
-        "Description": "<p>Publicly owned with 2,787,559 tons of waste in place.</p>",
+        "Description": "<p>Publicly owned with <strong>2,787,559</strong> tons of waste in place. Opened in 1942 and will close in 2034</p>",
         "Waste": "2787559",
         "Operation Life Cycle": "1942-2034",
         "Image": "images/ephrata.jpg"
@@ -126,11 +133,12 @@
       },
       "id": "ee28686022ec25e28935bba78a6c8760"
     },
+   
     {
       "type": "Feature",
-      "properties": {
+      "properties":     {
         "Title": "Greater Wenatchee Landfill",
-        "Description": "<p>Privately owned by Waste Management with 6,644,627 tons of waste in place.</p>",
+        "Description": "<p>Privately owned by Waste Management with <strong>6,644,627</strong> tons of waste in place. Opened in 1972 and will close in 2113.</p>",
         "Waste": "6644627",
         "Operation Life Cycle": "1972-2113",
         "Image": "images/wenatchee.jpg"
@@ -144,6 +152,7 @@
       },
       "id": "f0dc9aa66235dcedef98f669ffdbf2d6"
     }
+ 
   ],
   "type": "FeatureCollection"
 }

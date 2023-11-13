@@ -44,8 +44,9 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #0b0;
-}
+  background: #858c58;
+  background: -webkit-linear-gradient(#858c58, #284f22);
+  }
 
 #intro h1 {
   font-family: 'Gill Sans Extrabold', sans-serif;
@@ -115,6 +116,8 @@ figure {
   position: absolute;
   z-index: 11;
   padding: 1em;
+  background-color: #284f22 ;
+  color: #fff;
 }
 
 #masthead h3 {
@@ -147,13 +150,13 @@ figure p {
 }
 
 .step.is-active h2 {
-  background-color: #000000;
+  background-color: #284f22;
   color: #ffffff;
 }
 
 .step h2 {
   padding: 1em;
-  font-size: 1.25em;
+  font-size: 2em;
   background-color: #fff;
   color: #000000;
 }
@@ -177,6 +180,27 @@ figure p {
 
 .step .description p:last-child {
   margin-bottom: 0;
+}
+
+#outro {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #858c58;
+  background: -webkit-linear-gradient(#858c58, #284f22);
+}
+
+#outro .step .description {
+  padding-top: 1em;
+  background: #284f22;
+  font-family: 'Gill Sans Extrabold', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #ffffff;
+ 
 }
 
 /* mobile breakpoint */

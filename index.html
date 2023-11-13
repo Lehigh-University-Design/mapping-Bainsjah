@@ -28,7 +28,7 @@
 			<section id="intro">
 				<div class="inner">
 					<h1>Landfills of Washington State</h1>
-					<p>An exploration of the largest landfills in Washington.</p>
+					<p>An exploration of the 8 largest landfills in Washington.</p>
 				</div>
 			</section>
 
@@ -36,6 +36,10 @@
 				
 				<figure>
 					<!--<p class="ind">0</p>-->
+					<div id="masthead">
+						<h3>Washington Landfills</h3>
+					</div>
+					<div id="map"></div>
 					<div id="map"></div>
 				</figure>
 
@@ -44,7 +48,17 @@
 			
 			</section>
 
-			<section id="outro"></section>
+			<section id="outro">
+				<article id="conclusion_container">
+					<div class="step">
+						<div class="alt-media">
+								<div class="description">
+									<p> <strong>As landfills expand to accommodate the growing volume of human waste, questions arise about the long-term consequences of our consumption habits. What environmental toll do landfills exact on the surrounding ecosystems? How do landfills contribute to air and water pollution, affecting the health of both the environment and the communities nearby? Moreover, what steps can be taken to mitigate the ecological impact of our consumption, and how can we shift towards more sustainable practices that safeguard our planet for future generations?</strong></p>
+								</div>
+							</div>
+				</article>
+			</section>
+
 		</main>
 
 		<script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
@@ -118,7 +132,9 @@
 										 		img.src = p.properties.Image;
 										 		div.appendChild(img);
 										 	}
-
+											
+											
+										 	
 										 	// description
 										 	if(p.properties.Description) {
 										 		var description = document.createElement("div");
